@@ -26,11 +26,30 @@
 
     <main>
       <section class="hero" id="home">
+        <div class="hero-layers" aria-hidden="true">
+          <span class="layer layer-glow"></span>
+          <span class="layer layer-grid"></span>
+          <span class="layer layer-orbit"></span>
+        </div>
         <div class="container hero-grid">
           <div class="hero-copy">
             <p class="eyebrow">Exceptional living. Exclusive locations.</p>
             <h1>Find the Space Where Your Story Begins.</h1>
             <p class="hero-text">Discover premium residences curated for the modern homeowner. From signature penthouses to private estates, Property Centre makes every detail feel extraordinary.</p>
+            <div class="hero-stats">
+              <article class="stat-card">
+                <span class="stat-value" data-target="284">0</span>
+                <p>Properties sold</p>
+              </article>
+              <article class="stat-card">
+                <span class="stat-value" data-target="190">0</span>
+                <p>Clients served</p>
+              </article>
+              <article class="stat-card">
+                <span class="stat-value" data-target="7.9">0</span><span class="stat-unit">B</span>
+                <p>Investments managed</p>
+              </article>
+            </div>
             <div class="search-panel glass-card">
               <div class="search-field">
                 <label>Location</label>
@@ -61,19 +80,29 @@
           </div>
 
           <div class="hero-visuals">
-            <div class="visual-card visual-card-large glass-card">
-              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Luxury residence interior" />
-              <div class="visual-label">
-                <span>Premium Residence</span>
+            <div class="hero-stage">
+              <div class="visual-card visual-card-large glass-card">
+                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Luxury residence interior" />
+                <div class="visual-label">
+                  <span>Premium Residence</span>
+                </div>
+              </div>
+              <div class="visual-stack">
+                <div class="visual-card glass-card">
+                  <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=700&q=80" alt="Modern lobby entrance" />
+                </div>
+                <div class="visual-card glass-card">
+                  <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=700&q=80" alt="Stylish living room" />
+                </div>
               </div>
             </div>
-            <div class="visual-stack">
-              <div class="visual-card glass-card">
-                <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=700&q=80" alt="Modern lobby entrance" />
+            <div class="hero-floating" aria-hidden="true">
+              <div class="floating-panel glass-card">
+                <span class="floating-label">Featured preview</span>
+                <p>Explore a private residence with rich finishes, dramatic views, and effortless service.</p>
               </div>
-              <div class="visual-card glass-card">
-                <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=700&q=80" alt="Stylish living room" />
-              </div>
+              <span class="floating-shape shape-1"></span>
+              <span class="floating-shape shape-2"></span>
             </div>
           </div>
         </div>
