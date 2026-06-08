@@ -1,293 +1,253 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Property Centre | Luxury Real Estate</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="topbar" id="topbar">
-      <div class="container header-inner">
-        <a href="#home" class="brand">Property Centre</a>
-        <nav class="nav-menu" aria-label="Primary Navigation">
-          <a href="#home" class="nav-link active">Home</a>
-          <a href="#properties" class="nav-link">Properties</a>
-          <a href="#tour" class="nav-link">Virtual Tour</a>
-          <a href="#testimonials" class="nav-link">Testimonials</a>
-        </nav>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Property Centre — Luxury Real Estate</title>
+  <meta name="description" content="Find premium properties for sale, rent, and investment. Trusted agents, secure transactions, 24/7 support.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cinematic Intro -->
+  <div id="intro" class="intro">
+    <div class="intro-video-bg"></div>
+    <div class="intro-overlay"></div>
+    <div class="intro-content">
+      <div class="intro-logo">
+        <div class="logo-glow"></div>
+        <div class="logo-text">
+          <span class="logo-word">Property</span>
+          <span class="logo-word gold-text">Centre</span>
+        </div>
+      </div>
+      <div class="intro-text">
+        <h2 class="intro-h2">Welcome to Property Centre</h2>
+        <p class="intro-subtitle">Discover Luxury Living Beyond Expectations</p>
+      </div>
+      <div class="music-viz">
+        <div class="viz-bar" style="--i:0"></div>
+        <div class="viz-bar" style="--i:1"></div>
+        <div class="viz-bar" style="--i:2"></div>
+        <div class="viz-bar" style="--i:3"></div>
+        <div class="viz-bar" style="--i:4"></div>
+      </div>
+      <button class="skip-intro">Skip Intro</button>
+    </div>
+    <div class="intro-particles"></div>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="brand">Property <span class="gold">Centre</span></div>
+      <ul class="nav-links">
+        <li><a href="#properties">Properties</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="cta">
         <a href="#contact" class="btn btn-outline">Contact</a>
       </div>
-    </header>
+    </nav>
+  </header>
 
-    <main>
-      <section class="hero" id="home">
-        <div class="hero-layers" aria-hidden="true">
-          <span class="layer layer-glow"></span>
-          <span class="layer layer-grid"></span>
-          <span class="layer layer-orbit"></span>
-        </div>
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Exceptional living. Exclusive locations.</p>
-            <h1>Find the Space Where Your Story Begins.</h1>
-            <p class="hero-text">Discover premium residences curated for the modern homeowner. From signature penthouses to private estates, Property Centre makes every detail feel extraordinary.</p>
-            <div class="hero-stats">
-              <article class="stat-card">
-                <span class="stat-value" data-target="284">0</span>
-                <p>Properties sold</p>
-              </article>
-              <article class="stat-card">
-                <span class="stat-value" data-target="190">0</span>
-                <p>Clients served</p>
-              </article>
-              <article class="stat-card">
-                <span class="stat-value" data-target="7.9">0</span><span class="stat-unit">B</span>
-                <p>Investments managed</p>
-              </article>
-            </div>
-            <div class="search-panel glass-card">
-              <div class="search-field">
-                <label>Location</label>
-                <select>
-                  <option>Dubai Marina</option>
-                  h.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=700&q=80" alt="Stylish living room" />
-                </div>
-              </div>
-            </div>
-            <div class="hero-floating" aria-hidden="true">
-              <div class="floating-panel glass-card">
-                <span class="floating-label">Featured preview</span>
-                <p>Explore a private residence with rich finishes, dramatic views, and effortless service.</p>
-              </div>
-              <span class="floating-shape shape-1"></span>
-              <span class="floating-shape shape-2"></span>
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-bg-particles"></div>
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="https://cdn.coverr.co/videos/coverr-modern-luxury-house-1574?token=eyJhbGciOiJIUzI1NiJ9" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="hero-lighting"></div>
+      <div class="container hero-inner">
+        <div class="hero-content glass fade-in-up">
+          <h1 class="display cinematic-title">Find Your Dream Property<br>with <span class="gold">Property Centre</span></h1>
+          <p class="lead cinematic-subtitle">Luxury • Trust • Excellence — where your property dreams become reality.</p>
+          <div class="hero-search glass glow-on-hover">
+            <div class="search-inner">
+              <input type="text" placeholder="Enter location..." class="search-input" />
+              <select class="search-select"><option>Any Type</option><option>Apartment</option><option>Villa</option><option>Penthouse</option></select>
+              <button class="btn btn-primary search-btn">Search</button>
             </div>
           </div>
+          <div class="hero-ctas">
+            <a href="#properties" class="btn btn-primary btn-lg glow-btn">Explore Properties</a>
+            <a href="#contact" class="btn btn-ghost btn-lg">Book a Consultation</a>
+          </div>
         </div>
-      </section>
+        <div class="floating-models">
+          <div class="float float-1 parallax" data-speed="0.12"></div>
+          <div class="float float-2 parallax" data-speed="0.08"></div>
+          <div class="float float-3 parallax" data-speed="0.18"></div>
+          <div class="light-streak" data-speed="0.2"></div>
+        </div>
+      </div>
+    </section>
 
-      <section class="value-prop" aria-labelledby="why-us-title">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Why Property Centre</p>
-            <h2 id="why-us-title">Luxury services designed around certainty and confidence.</h2>
-          </div>
-          <div class="feature-grid">
-            <article class="feature-card glass-card">
-              <span class="feature-icon">🖥️</span>
-              <h3>Virtual 3D Tours</h3>
-              <p>Walk through every residence in immersive detail before you visit.</p>
-            </article>
-            <article class="feature-card glass-card">
-              <span class="feature-icon">🔒</span>
-              <h3>Verified Listings</h3>
-              <p>Every property is vetted for authenticity, quality, and premium standards.</p>
-            </article>
-            <article class="feature-card glass-card">
-              <span class="feature-icon">💎</span>
-              <h3>White-Glove Service</h3>
-              <p>Personal advisors guide your search with discretion, care, and precision.</p>
-            </article>
-            <article class="feature-card glass-card">
-              <span class="feature-icon">⚡</span>
-              <h3>Zero Hidden Fees</h3>
-              <p>Transparent pricing so you can make confident decisions without surprises.</p>
-            </article>
-          </div>
+    <!-- Search -->
+    <section class="search-section container" id="search">
+      <div class="search-card glass">
+        <div class="search-row">
+          <input type="text" id="qLocation" placeholder="Location (city or neighborhood)" />
+          <select id="qType"><option>Any type</option><option>Apartment</option><option>House</option><option>Villa</option><option>Commercial</option></select>
+          <select id="qPrice"><option>Any price</option><option>&lt; $500k</option><option>$500k - $1M</option><option>&gt; $1M</option></select>
+          <button id="searchBtn" class="btn btn-primary">Search</button>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="properties" id="properties" aria-labelledby="properties-title">
-        <div class="container">
-          <div class="section-heading split">
-            <div>
-              <p class="eyebrow">Featured Properties</p>
-              <h2 id="properties-title">Signature homes that define modern luxury.</h2>
-            </div>
-            <a href="#contact" class="link-button">Schedule a viewing</a>
+    <!-- Featured Properties -->
+    <section class="properties container" id="properties">
+      <h2 class="section-title">Featured Properties</h2>
+      <div class="grid cards">
+        <article class="card property-card reveal">
+          <div class="thumb"><img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80&auto=format&fit=crop" alt="Luxury Villa"></div>
+          <div class="card-body">
+            <h3>Seaside Villa</h3>
+            <p class="meta">Malibu, CA • 5 bd • 6 ba • 6,200 sqft</p>
+            <div class="price">$9,500,000</div>
           </div>
-          <div class="property-grid">
-            <article class="property-card glass-card">
-              <div class="property-visual">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Modern villa exterior" />
-                <div class="badge">$4.8M</div>
-              </div>
-              <div class="property-content">
-                <div class="property-meta">
-                  <span class="property-location">Beverly Hills, CA</span>
-                  <span class="property-type">Estate Villa</span>
-                </div>
-                <h3>Hillside Sanctuary</h3>
-                <ul class="property-stats">
-                  <li>5 Beds</li>
-                  <li>6 Baths</li>
-                  <li>8,200 sqft</li>
-                </ul>
-              </div>
-            </article>
-            <article class="property-card glass-card">
-              <div class="property-visual">
-                <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=900&q=80" alt="Luxury penthouse terrace" />
-                <div class="badge">$3.2M</div>
-              </div>
-              <div class="property-content">
-                <div class="property-meta">
-                  <span class="property-location">Central London</span>
-                  <span class="property-type">Penthouse</span>
-                </div>
-                <h3>Skyline Retreat</h3>
-                <ul class="property-stats">
-                  <li>4 Beds</li>
-                  <li>4 Baths</li>
-                  <li>3,700 sqft</li>
-                </ul>
-              </div>
-            </article>
-            <article class="property-card glass-card">
-              <div class="property-visual">
-                <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" alt="Luxury apartment interior" />
-                <div class="badge">$2.5M</div>
-              </div>
-              <div class="property-content">
-                <div class="property-meta">
-                  <span class="property-location">Dubai Marina</span>
-                  <span class="property-type">Sky Apartment</span>
-                </div>
-                <h3>Harbor View Residence</h3>
-                <ul class="property-stats">
-                  <li>3 Beds</li>
-                  <li>3 Baths</li>
-                  <li>2,450 sqft</li>
-                </ul>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
+        </article>
 
-      <section class="virtual-tour" id="tour" aria-labelledby="tour-title">
-        <div class="container tour-grid">
-          <div class="tour-copy">
-            <p class="eyebrow">Immersive Experience</p>
-            <h2 id="tour-title">Virtual property tours that feel like the real thing.</h2>
-            <p>Step into a new standard of discovery with hyper-real walkthroughs, detailed floor plans, and curated interior previews designed to move you instantly.</p>
-            <a href="#contact" class="btn btn-primary">Book a virtual tour</a>
+        <article class="card property-card reveal">
+          <div class="thumb"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80&auto=format&fit=crop" alt="City Penthouse"></div>
+          <div class="card-body">
+            <h3>Skyline Penthouse</h3>
+            <p class="meta">New York, NY • 3 bd • 3 ba • 2,700 sqft</p>
+            <div class="price">$5,200,000</div>
           </div>
-          <div class="tour-media glass-card">
-            <div class="tour-frame">
-              <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1000&q=80" alt="Virtual property tour" />
-              <button class="play-button" aria-label="Play virtual tour"><span></span></button>
-            </div>
-            <div class="tour-highlights">
-              <div>
-                <strong>24/7 access</strong>
-                <p>On-demand tours available anytime, anywhere.</p>
-              </div>
-              <div>
-                <strong>Curated guidance</strong>
-                <p>Personal concierge support through the whole experience.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </article>
 
-      <section class="testimonials" id="testimonials" aria-labelledby="reviews-title">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Client Stories</p>
-            <h2 id="reviews-title">Trusted by owners and buyers who expect the exceptional.</h2>
+        <article class="card property-card reveal">
+          <div class="thumb"><img src="https://images.unsplash.com/photo-1599423300746-b62533397364?w=1200&q=80&auto=format&fit=crop" alt="Modern House"></div>
+          <div class="card-body">
+            <h3>Modern Estate</h3>
+            <p class="meta">Austin, TX • 6 bd • 7 ba • 8,400 sqft</p>
+            <div class="price">$7,300,000</div>
           </div>
-          <div class="testimonial-slider">
-            <div class="testimonial-slide active">
-              <p>"Property Centre made our move effortless. Every conversation felt exclusive, and the home they found for us was beyond expectation."</p>
-              <div class="testimonial-author">
-                <strong>Amelia Rhodes</strong>
-                <span>Founder, Luxe Interiors</span>
-              </div>
-            </div>
-            <div class="testimonial-slide">
-              <p>"The virtual tours were stunning and helped us commit with confidence. Their team handled every detail with care."</p>
-              <div class="testimonial-author">
-                <strong>Mark Bennett</strong>
-                <span>Tech Executive</span>
-              </div>
-            </div>
-            <div class="testimonial-slide">
-              <p>"From the first consultation to handing over the keys, Property Centre felt like a partner rather than an agent."</p>
-              <div class="testimonial-author">
-                <strong>Sophia Lee</strong>
-                <span>Media Producer</span>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-controls">
-            <button class="testimonial-dot active" data-index="0" aria-label="View testimonial 1"></button>
-            <button class="testimonial-dot" data-index="1" aria-label="View testimonial 2"></button>
-            <button class="testimonial-dot" data-index="2" aria-label="View testimonial 3"></button>
-          </div>
-        </div>
-      </section>
-    </main>
+        </article>
+      </div>
+    </section>
 
-    <footer class="footer" id="contact">
-      <div class="container footer-grid">
-        <div class="footer-copy">
-          <p class="eyebrow">Connect with us</p>
-          <h2>Ready to discover your next address?</h2>
-          <p>Contact our concierge team for a private consultation, bespoke tours, and curated selections tailored to your lifestyle.</p>
-          <div class="contact-details">
-            <div>
-              <strong>Office</strong>
-              <p>10 Marble Avenue, London, UK</p>
-            </div>
-            <div>
-              <strong>Email</strong>
-              <p>hello@propertycentre.com</p>
-            </div>
-          </div>
-          <div class="social-links">
-            <a href="#" aria-label="Instagram">Instagram</a>
-            <a href="#" aria-label="LinkedIn">LinkedIn</a>
-            <a href="#" aria-label="Facebook">Facebook</a>
-          </div>
+    <!-- Why Choose Us -->
+    <section class="why container" id="why">
+      <h2 class="section-title">Why Choose Us</h2>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="icon">🏆</div>
+          <h4>Trusted Agents</h4>
+          <p>Experienced agents with proven track records.</p>
         </div>
-        <div class="footer-form glass-card">
-          <form>
-            <div class="form-group">
-              <label for="name">Full Name</label>
-              <input type="text" id="name" name="name" placeholder="Jane Doe" />
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="jane@propertycentre.com" />
-            </div>
-            <div class="form-group">
-              <label for="message">Your Message</label>
-              <textarea id="message" name="message" rows="4" placeholder="Tell us about your ideal property..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Inquiry</button>
-          </form>
-          <div class="map-placeholder" aria-label="Map placeholder">
-            <span>Map preview</span>
+        <div class="why-card reveal">
+          <div class="icon">💰</div>
+          <h4>Best Prices</h4>
+          <p>Market-driven pricing and negotiation expertise.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="icon">🔒</div>
+          <h4>Secure Transactions</h4>
+          <p>Safe, transparent, and compliant processes.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="icon">⏱️</div>
+          <h4>24/7 Support</h4>
+          <p>Always-on assistance and concierge services.</p>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="num" data-target="1280">0</div><div class="label">Deals Closed</div></div>
+        <div class="stat"><div class="num" data-target="940">0</div><div class="label">Happy Clients</div></div>
+        <div class="stat"><div class="num" data-target="18">0</div><div class="label">Years Experience</div></div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services container" id="services">
+      <h2 class="section-title">Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card glass reveal"><h4>Property Buying</h4><p>End-to-end buying assistance and due diligence.</p></div>
+        <div class="service-card glass reveal"><h4>Property Selling</h4><p>Premium listings, marketing, and valuation.</p></div>
+        <div class="service-card glass reveal"><h4>Property Rental</h4><p>Tenant sourcing and property management.</p></div>
+        <div class="service-card glass reveal"><h4>Investment Consultancy</h4><p>Portfolio strategies and ROI optimization.</p></div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials container" id="testimonials">
+      <h2 class="section-title">What Clients Say</h2>
+      <div class="carousel">
+        <div class="slides">
+          <div class="slide active">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Client">
+            <blockquote>"Exceptional service and seamless transactions. Highly recommend!"</blockquote>
+            <cite>— Laura M.</cite>
+          </div>
+          <div class="slide">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+            <blockquote>"A truly premium experience from start to finish."</blockquote>
+            <cite>— David R.</cite>
+          </div>
+          <div class="slide">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client">
+            <blockquote>"They found the perfect investment property for us."</blockquote>
+            <cite>— Priya S.</cite>
           </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>© 2026 Property Centre. Crafted for exceptional living.</p>
-      </div>
-    </footer>
+    </section>
 
-    <script src="script.js"></script>
-    
-    <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
-<script src="https://files.bpcontent.cloud/2026/06/07/11/20260607114201-R80XXYL9.js" defer></script>
-    
-  </body>
-  
+    <!-- Gallery -->
+    <section class="gallery container" id="gallery">
+      <h2 class="section-title">Property Gallery</h2>
+      <div class="masonry">
+        <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?w=900&q=80&auto=format&fit=crop" alt="">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=900&q=80&auto=format&fit=crop" alt="">
+        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=900&q=80&auto=format&fit=crop" alt="">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80&auto=format&fit=crop" alt="">
+        <img src="https://images.unsplash.com/photo-1599423300746-b62533397364?w=900&q=80&auto=format&fit=crop" alt="">
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact container" id="contact">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-grid">
+        <form class="contact-form glass" id="contactForm">
+          <div class="row"><input type="text" placeholder="Full name" required></div>
+          <div class="row"><input type="email" placeholder="Email" required></div>
+          <div class="row"><input type="tel" placeholder="Phone"></div>
+          <div class="row"><textarea placeholder="Message" required></textarea></div>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </form>
+        <div class="contact-info glass">
+          <h4>Office</h4>
+          <p>123 Luxe Avenue, Suite 100<br>Central City</p>
+          <p><strong>Phone:</strong> (555) 123-4567<br><strong>Email:</strong> hello@propertycentre.com</p>
+          <div class="map-placeholder">Google Maps Placeholder</div>
+          <div class="socials">
+            <a href="#">LinkedIn</a> • <a href="#">Instagram</a> • <a href="#">Facebook</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand small">Property <span class="gold">Centre</span></div>
+      <div class="footer-links">
+        <a href="#properties">Properties</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="copyright">© <span id="year"></span> Property Centre. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox"><img src="" alt=""><button class="lb-close">✕</button></div>
+
+  <script src="script.js"></script>
+</body>
 </html>
