@@ -10,48 +10,6 @@
   <script async src="https://tally.so/widgets/embed.js"></script>
 </head>
 <body>
-  <!-- Cinematic Intro -->
-  <div id="intro" class="intro">
-    <div class="intro-video-bg"></div>
-    <div class="intro-overlay"></div>
-    <div class="intro-content">
-      <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-      <model-viewer id="intro-model"
-        src="https://cdn.jsdelivr.net/gh/KhronosGroup/glTF-Sample-Models@master/2.0/House/glTF-Binary/House.glb"
-        alt="Luxury house model"
-        exposure="1"
-        environment-image="neutral"
-        camera-controls
-        auto-rotate
-        rotation-per-second="0.04"
-        shadow-intensity="1"
-        shadow-softness="0.6"
-        ar
-        style="width:260px;height:170px;display:block;margin:0 auto 1.2rem;"
-      ></model-viewer>
-      <div class="intro-logo">
-        <div class="logo-glow"></div>
-        <div class="logo-text">
-          <span class="logo-word">Property</span>
-          <span class="logo-word gold-text">Centre</span>
-        </div>
-      </div>
-      <div class="intro-text">
-        <h2 class="intro-h2">Welcome to Property Centre</h2>
-        <p class="intro-subtitle">Discover Luxury Living Beyond Expectations</p>
-      </div>
-      <div class="music-viz">
-        <div class="viz-bar" style="--i:0"></div>
-        <div class="viz-bar" style="--i:1"></div>
-        <div class="viz-bar" style="--i:2"></div>
-        <div class="viz-bar" style="--i:3"></div>
-        <div class="viz-bar" style="--i:4"></div>
-      </div>
-      <button class="skip-intro">Skip Intro</button>
-    </div><script async src="https://tally.so/widgets/embed.js"></script>
-    <div class="intro-particles"></div>
-  </div>
-
   <header class="site-header">
     <nav class="nav container">
       <div class="brand">Property <span class="gold">Centre</span></div>
@@ -66,6 +24,7 @@
       </div>
     </nav>
   </header>
+  <a href="#contact" class="sticky-agent">Contact Agent</a>
 
   <main>
     <!-- Hero -->
@@ -103,7 +62,7 @@
 
     <!-- Search -->
     <section class="search-section container" id="search">
-      <div class="search-card glass">
+      <div class="search-card glass reveal">
         <div class="search-row">
           <input type="text" id="qLocation" placeholder="Location (city or neighborhood)" />
           <select id="qType"><option>Any type</option><option>Apartment</option><option>House</option><option>Villa</option><option>Commercial</option></select>
@@ -265,8 +224,8 @@
 
     <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
 <script src="https://files.bpcontent.cloud/2026/06/07/11/20260607114201-R80XXYL9.js" defer></script>
-  <script src="script.js"></script>
-<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>  
-  <iframe data-tally-src="https://tally.so/embed/0Qk5XQ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="694" frameborder="0" marginheight="0" marginwidth="0" title="Contact Form Template"></iframe>
+  <script src="script.js"></script>  
+
+ <div style="width: 100%; max-width: 800px; margin: 60px auto; padding: 20px; font-family: sans-serif;"> <h2 style="text-align: center; color: #ffffff; margin-bottom: 30px;">Property Inquiry Form</h2> <iframe src="https://tally.so/embed/0Qk5XQ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" title="Property Inquiry Form"> </iframe> </div>
 </body>
 </html>
