@@ -1,37 +1,4 @@
 document.addEventListener('DOMContentLoaded',()=>{
-  // ========== CINEMATIC INTRO SEQUENCE ==========
-  const intro = document.getElementById('intro');
-  const introParticles = document.querySelector('.intro-particles');
-  const skipBtn = document.querySelector('.skip-intro');
-
-  // Generate particles for intro
-  const generateParticles = (container, count = 30) => {
-    for(let i=0;i<count;i++){
-      const particle = document.createElement('div');
-      particle.style.position='absolute';
-      particle.style.width='2px';
-      particle.style.height='2px';
-      particle.style.background=Math.random()>0.7?'#D4AF37':'#fff';
-      particle.style.borderRadius='50%';
-      particle.style.left=Math.random()*100+'%';
-      particle.style.top=Math.random()*100+'%';
-      particle.style.opacity=Math.random()*0.5;
-      particle.style.animation=`particle-float ${3+Math.random()*4}s ease-in-out infinite`;
-      particle.style.animationDelay=Math.random()*2+'s';
-      container.appendChild(particle);
-    }
-  };
-  generateParticles(introParticles);
-
-  // Auto-hide intro after 8 seconds
-  const hideIntro = ()=>{
-    intro.classList.add('hidden');
-    setTimeout(()=>{intro.style.display='none';intro.style.pointerEvents='none';},1200);
-  };
-  const introTimeout = setTimeout(hideIntro,8000);
-
-  skipBtn.addEventListener('click',()=>{clearTimeout(introTimeout);hideIntro();});
-
   // ========== HEADER SCROLL EFFECT ==========
   const header = document.querySelector('.site-header');
   window.addEventListener('scroll',()=>{
